@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bar La Tapería · Desayunos, Guisos y Tapas en Dos Hermanas (Sevilla)</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with custom configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#fff8f5",
+            "secondary": "#4f6447",
+            "background": "#fff8f5",
+            "outline": "#8c716b",
+            "on-secondary-fixed": "#0e2009",
+            "tertiary": "#805204",
+            "inverse-surface": "#392e25",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#f9bb69",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#f2dfd1",
+            "on-primary-fixed-variant": "#891e07",
+            "surface-variant": "#f2dfd1",
+            "primary-fixed-dim": "#ffb4a4",
+            "on-tertiary-fixed-variant": "#643f00",
+            "on-error-container": "#93000a",
+            "surface-tint": "#aa361e",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#f8e5d6",
+            "on-secondary-container": "#556a4d",
+            "on-primary-container": "#fffbff",
+            "on-background": "#231a11",
+            "surface-bright": "#fff8f5",
+            "secondary-container": "#d2eac5",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#a6331b",
+            "on-tertiary-fixed": "#2a1800",
+            "tertiary-fixed": "#ffddb6",
+            "surface-container-low": "#fff1e8",
+            "primary-container": "#c84b31",
+            "primary-fixed": "#ffdad3",
+            "outline-variant": "#e0bfb9",
+            "on-primary-fixed": "#3e0500",
+            "on-surface": "#231a11",
+            "error": "#ba1a1a",
+            "inverse-primary": "#ffb4a4",
+            "on-secondary-fixed-variant": "#384c31",
+            "secondary-fixed": "#d2eac5",
+            "on-surface-variant": "#58413c",
+            "inverse-on-surface": "#ffeee1",
+            "secondary-fixed-dim": "#b6cdaa",
+            "surface-container": "#feeadc",
+            "tertiary-container": "#9c6a1f",
+            "surface-dim": "#e9d7c8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.25rem",
+            "gutter-mobile": "0.75rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "22px", "fontWeight": "400"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}],
+            "title-lg": ["18px", {"lineHeight": "24px", "fontWeight": "700"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+            "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Andalusian subtle ceramic diamond motif divider */
+    .azulejo-divider {
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .azulejo-divider::before, .azulejo-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e0bfb9;
+      opacity: 0.6;
+    }
+    .azulejo-divider-mark {
+      width: 10px;
+      height: 10px;
+      background: #c84b31;
+      transform: rotate(45deg);
+      margin: 0 16px;
+      box-shadow: 0 0 0 3px #fff8f5;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed pb-20 md:pb-0">
+<!-- 1. STICKY TOP NAVIGATION BAR (Shared Components TopNavBar) -->
+<header class="docked full-width top-0 sticky z-40 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-sm dark:shadow-none border-b border-outline-variant/60 dark:border-outline/40 transition-all duration-200">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex justify-between items-center w-full">
+<!-- Brand Logo / Identity -->
+<a class="flex items-center gap-2 group" href="#">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight leading-none">Bar La Tapería</span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider uppercase">Dos Hermanas · Sevilla</span>
+</div>
+</a>
+<!-- Desktop Links -->
+<nav class="hidden md:flex items-center space-x-7">
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary font-medium transition-colors text-label-lg font-label-lg" href="#carta">Carta</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary font-medium transition-colors text-label-lg font-label-lg" href="#menu-del-dia">Menú del día</a>
+<a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary dark:border-inverse-primary pb-1 text-label-lg font-label-lg" href="#desayunos">Desayunos</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary font-medium transition-colors text-label-lg font-label-lg" href="#opiniones">Opiniones</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary font-medium transition-colors text-label-lg font-label-lg" href="#donde-estamos">Dónde estamos</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-4 py-2 rounded-full font-label-lg text-label-lg shadow-sm active:scale-[0.98] transition-all duration-150" href="tel:622442597">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+<span class="hidden sm:inline">Llamar 622 44 25 97</span>
+<span class="sm:hidden">Llamar</span>
+</a>
+</div>
+</div>
+</header>
+<!-- 2. HERO SECTION -->
+<section class="relative min-h-[560px] lg:min-h-[640px] flex items-center overflow-hidden bg-inverse-surface">
+<!-- Hero Background Image with warm overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Desayuno andaluz tradicional en Bar La Tapería con mollete tostado, jamón ibérico y café humeante" class="w-full h-full object-cover object-center transform scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8wvpuBOCSzsbkPMl8PS_mTvKELe0fzqPJhXpc1eRVVRvQoHOHb8vUUWRqYH_jRkci6N3UGY73WVm5Ei5QpK_jLNFBtfRSzbvBonSRdllJYED5BCGMzZ7bHl7vFnYZKOUNY9X0xqahd8CqyAfTpOf4Eyyvl0aBV4DleSCjK4qfGplIQ8TPzXnvM7j6Mqr883lPR3yE_wmw6-9Kdm6AokARjDcEimJTOEpcLe7SOgePmfrtnU-u1A40pg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/90 via-inverse-surface/75 to-inverse-surface/50"></div>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+<div class="max-w-2xl text-on-primary">
+<!-- Live Open Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface shadow-sm mb-6 border border-outline-variant/40">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary font-bold">Abierto ahora</span>
+<span class="text-outline text-label-md">·</span>
+<span class="text-on-surface-variant text-label-md font-label-md">Cierra a las 21:00</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-display text-headline-lg-mobile md:text-display text-on-primary mb-5 leading-tight tracking-tight drop-shadow-sm">
+          Desayunos, guisos y tapas de toda la vida en Dos Hermanas
+        </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mb-8 max-w-xl leading-relaxed">
+          Cocina casera hecha cada día, sin congelados. Saborea la auténtica gastronomía andaluza con menús económicos desde 1 € a 10 € en pleno corazón de la ciudad.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2.5 bg-primary-container hover:bg-primary text-on-primary px-6 py-3.5 rounded-full font-title-md text-title-md shadow-lg shadow-primary/30 active:scale-[0.98] transition-all" href="tel:622442597">
+<span class="material-symbols-outlined text-[20px]" data-icon="call">call</span>
+<span>Llamar ahora (622 44 25 97)</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-on-secondary px-6 py-3.5 rounded-full font-title-md text-title-md shadow-md active:scale-[0.98] transition-all" href="#donde-estamos">
+<span class="material-symbols-outlined text-[20px]" data-icon="location_on">location_on</span>
+<span>Cómo llegar</span>
+</a>
+</div>
+<!-- Micro-data -->
+<div class="mt-10 pt-6 border-t border-inverse-on-surface/20 flex flex-wrap gap-6 text-inverse-on-surface/90 font-label-md text-label-md">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">verified</span> C. Santa María Magdalena, 53
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">schedule</span> Lunes a Sábado desde las 7:00
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. TRUST BANNER / VENTAJAS DE BARRIO -->
+<section class="border-y border-outline-variant/60 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+<!-- Advantage 1 -->
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm border border-outline-variant/40">
+<span class="material-symbols-outlined text-[26px]">skillet</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Cocina casera diaria</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin congelados ni prisas</p>
+</div>
+</div>
+<!-- Advantage 2 -->
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm border border-outline-variant/40">
+<span class="material-symbols-outlined text-[26px]">loyalty</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Precios de barrio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menús desde 1 € a 10 €</p>
+</div>
+</div>
+<!-- Advantage 3 -->
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-tertiary shadow-sm border border-outline-variant/40">
+<span class="material-symbols-outlined text-[26px]">deck</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Terraza exterior</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ambiente acogedor y fresco</p>
+</div>
+</div>
+<!-- Advantage 4 -->
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-outline shadow-sm border border-outline-variant/40">
+<span class="material-symbols-outlined text-[26px]">contactless</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Pago tarjeta y móvil</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rápido y cómodo</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. MENÚ DEL DÍA DESTACADO -->
+<section class="py-16 md:py-24 bg-surface" id="menu-del-dia">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-xl mx-auto mb-12">
+<div class="azulejo-divider mb-3">
+<span class="azulejo-divider-mark"></span>
+</div>
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Cazuela y Tradición</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1 mb-3">
+          Guisos y Menú del Día
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Nuestras cazuelas se encienden al amanecer. Ingredientes frescos de la plaza de abastos preparados con esmero andaluz.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Visual Food Card with Image_4 -->
+<div class="lg:col-span-6 relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/60 group">
+<img alt="Platos caseros del día en Bar La Tapería: carne al toro, pimientos rellenos y tortilla jugosa" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFPpIkKjsUsKfQlIO-FBLTEJmBf8z6wwLcLHt02f_pUjgQC8ArU7Krp4mP9lgztBsnAINXhRerK3C40u50NufDVT0Y4SGOcW5wajJtceXkQwNKnEWJQ942wR44FBZDbW9WTT62anB3VM-_2PMWOUbK8eXfwiJp5Q4nkZU469Cmd7Wnq-ljqgdwpxrEbBiXSx18Wd_5UPJmRYYbm2xbI-BpDU6kqs9gjsh53gJxfBY2eolJY5Uf6NVr8g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-on-primary">
+<span class="bg-primary px-3 py-1 rounded-full text-label-sm font-label-sm font-bold uppercase tracking-wider mb-2 inline-block">Plato Estrella</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Carne al Toro al Estilo Tradicional Sevillano</h3>
+<p class="text-inverse-on-surface text-body-sm font-body-sm mt-1">Tierna, melosa y servida con su salsa casera para mojar pan.</p>
+</div>
+</div>
+<!-- Pizarra Card "Hoy en La Tapería" -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-sm border border-outline-variant/80 relative">
+<div class="flex justify-between items-center pb-4 mb-6 border-b border-outline-variant/60">
+<div>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-bold">Pizarra del Día</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Hoy en La Tapería</h3>
+</div>
+<div class="text-right">
+<span class="inline-block px-3 py-1 bg-surface-container text-tertiary rounded-lg font-label-md text-label-md font-bold">
+                Lunes a Jueves Económico
+              </span>
+</div>
+</div>
+<!-- Dishes list -->
+<ul class="space-y-4">
+<li class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+<div class="pr-4">
+<div class="flex items-center gap-2">
+<h4 class="font-title-md text-title-md text-on-surface">Carne al toro tradicional en cazuela</h4>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm px-2 py-0.5 rounded-full">Sugerencia</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ternera estofada con vino de la tierra y patatas fritas naturales</p>
+</div>
+<span class="font-title-lg text-title-lg text-primary whitespace-nowrap">8,50 €</span>
+</li>
+<li class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+<div class="pr-4">
+<h4 class="font-title-md text-title-md text-on-surface">Pimientos del piquillo rellenos de bacalao</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con suave salsa vizcaína suave y gratinado suave</p>
+</div>
+<span class="font-title-lg text-title-lg text-primary whitespace-nowrap">7,50 €</span>
+</li>
+<li class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+<div class="pr-4">
+<h4 class="font-title-md text-title-md text-on-surface">Tortilla de verduras de la huerta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calabacín, cebolla dulce y pimiento verde recién cuajada</p>
+</div>
+<span class="font-title-lg text-title-lg text-primary whitespace-nowrap">4,50 €</span>
+</li>
+<li class="flex items-center justify-between pb-2">
+<div class="pr-4">
+<h4 class="font-title-md text-title-md text-on-surface">Garbanzos con espinacas sevillanos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El clásico de convento con majado de pan frito, comino y ajo</p>
+</div>
+<span class="font-title-lg text-title-lg text-primary whitespace-nowrap">6,00 €</span>
+</li>
+</ul>
+<!-- Call to action inside Menu Card -->
+<div class="mt-8 pt-5 border-t border-outline-variant/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">
+              * Raciones abundantes acompañadas de pan y picos artesanos.
+            </span>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-5 py-2.5 rounded-full font-label-lg text-label-lg shadow-sm active:scale-95 transition-all" href="tel:622442597">
+<span class="material-symbols-outlined text-[18px]">table_bar</span>
+<span>Llamar para reservar mesa</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. DESAYUNOS ANDALUCES -->
+<section class="py-16 md:py-24 bg-surface-container-low" id="desayunos">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-xl mx-auto mb-12">
+<div class="azulejo-divider mb-3">
+<span class="azulejo-divider-mark"></span>
+</div>
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider font-bold">Desde las 7:00 de la mañana</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1 mb-2">
+          Desayunos Sevillanos
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Con café de categoría, tostador de fuego y aceite de oliva virgen extra de primera cosecha.
+        </p>
+<!-- Bread varieties chip pills -->
+<div class="flex flex-wrap justify-center gap-2 mt-4">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">Mollete de Antequera</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">Pan de pueblo crujiente</span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">Viena sevillana</span>
+</div>
+</div>
+<!-- 4 Cards Grid for Breakfast -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Breakfast 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/60 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="h-44 rounded-xl overflow-hidden mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A warm and inviting close-up photograph of an authentic Andalusian breakfast tostada topped with crushed ripe red tomatoes and delicate slices of Iberian cured ham drizzled with glistening extra virgin olive oil. Soft morning sunlight streams across a rustic wooden table in a traditional Dos Hermanas bar, creating gentle golden reflections on the ceramic saucer with subtle terracotta and olive accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGe8DUQW9KQXNkyq1CemiNEu2Wxnu964vOQH4Qvys6b7WyOEuUaBJ8p1cwPHa6c-xcrTpJLgsgrgJvroZioTA7KdTUkjpdvvk4KU7LvU2Hr6B-gA0s4PxBN_3Z-DRP-3i4H0V6vbUrLEhVJYBzCaCq6-yCm_E3qgcVq5lk0jflnu3NAD37U41cCLjiSHhd8F9yS3_ExET1wwTlB6rNuB8jSDtMMChgZlm3Ns-ga7cvpynKS4Cx1DGUiA"/>
+<span class="absolute top-2.5 right-2.5 bg-primary text-on-primary text-label-sm font-label-sm px-2.5 py-1 rounded-full font-bold">El Clásico</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Jamón Ibérico &amp; AOVE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Jamón cortado fino con tomate recién triturado del día y aceite de oliva virgen extra.
+            </p>
+</div>
+<div class="pt-3 border-t border-surface-container-high flex justify-between items-center">
+<span class="font-label-md text-label-md text-outline">Entera + Café</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,80 €</span>
+</div>
+</div>
+<!-- Breakfast 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/60 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="h-44 rounded-xl overflow-hidden mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A close-up appetizing photograph of a toasted rustic bread roll filled with savory artisanal shredded carne mechada pork, dripping with its rich and aromatic golden gravy. The dish rests on a warm cream ceramic plate on a wooden bar counter in a cozy Seville tavern, framed by warm ambient lighting, earth tones, terracotta dishes, and subtle green olive oil bottles in the soft background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1iXa25YBoIk1ShFKPj740Cdovz5wmjY6rIvMyPxuyHu4r93-3BX-NhO9ETPVE6GzB6ISu7H7qnumbUp0MasOMnColbrrBCv0ZeaTw6Ua8r1u2qvcH2OzFh4GlM-vTxMJqwt84E08d8gHYYFHCX7hugCsgFIMg2ynFf0p_09OpTo2a4wNAI9jWEdxXMTFFzDHVh8ofY1kvo5kEsbPIqzxQlWbdU6wurXdhsnfkaa0RmAQPAIxcgVfW0A"/>
+<span class="absolute top-2.5 right-2.5 bg-tertiary-container text-on-tertiary text-label-sm font-label-sm px-2.5 py-1 rounded-full font-bold">Especialidad</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Carne Mechada Casera</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Magro mechado mechada artesanal en su propio jugo caliente sobre pan crujiente.
+            </p>
+</div>
+<div class="pt-3 border-t border-surface-container-high flex justify-between items-center">
+<span class="font-label-md text-label-md text-outline">Entera + Café</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,90 €</span>
+</div>
+</div>
+<!-- Breakfast 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/60 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="h-44 rounded-xl overflow-hidden mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A delicious overhead shot of a freshly prepared Spanish potato omelette portion served atop crispy toasted country bread, crowned with fresh green parsley and accompanied by a steaming glass of cafe con leche with velvety foam. Natural sunlight illuminates the scene with warm terracotta and creamy tones that reflect an authentic Andalusian morning atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_7DgynP4Nmx1aEToOFyt-GTiXa2c_AhPHmWieiSBa9NTO1pHIQAPCJAI-N4_2tmca-BFqzs64izkleJAIYzvecHg6PDVCT8gI_zRh06Yh5hQwqykDVe3jnhngldx4wpollHX74K7gB_hkbnvhdS72IaB1_eIOaqk2TKA15IMM2yhtZjlckywZmgbi5SpWIpHNaKtMNzcdLz841wdGOVZdyrR6dve3v3zik7JQC4-Vo023dE51MB9pOA"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Tortilla Española</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Recién cuajada, jugosa por dentro con patata confitada y un toque suave de cebolla.
+            </p>
+</div>
+<div class="pt-3 border-t border-surface-container-high flex justify-between items-center">
+<span class="font-label-md text-label-md text-outline">Entera + Café</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,60 €</span>
+</div>
+</div>
+<!-- Breakfast 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/60 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="h-44 rounded-xl overflow-hidden mb-4 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An artisanal Spanish breakfast plate featuring a warm, fluffy French omelette delicately seasoned with herbs and extra virgin olive oil inside a warm Antequera mollete roll. The composition displays soft earth tones, warm cream ceramics, and a clean minimalist aesthetic inspired by Andalusian hospitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44Hz8KL8Q6VggicDT2ufNnmXI5wEmVCS5jMjpF2j6FtqTOyoVN83zBJ_zFQNZ59LWjdWCD72qF_nNN3MVD3u6Lalv-dTOA0g2ZpVqdzX81ODw8tEeeZsSHoardfH1Tze_V0eausn8ekMzJwp94iUDkgUDrLRCySGhQeuUi4UoRSo5rTJJVeH_f6Tzl1MYNJdFlcLt0HCuySnthJtom4UhOnMnrC1OTQno180FuKPVrcbvjlfVBtQe9w"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Tortilla Francesa &amp; AOVE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Huevos camperos batidos al instante con un hilo de aceite virgen extra ecológico.
+            </p>
+</div>
+<div class="pt-3 border-t border-surface-container-high flex justify-between items-center">
+<span class="font-label-md text-label-md text-outline">Entera + Café</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,40 €</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CARTA DE TAPAS Y RACIONES -->
+<section class="py-16 md:py-24 bg-surface" id="carta">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">Tapeo Sevillano</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+            Carta de Tapas &amp; Raciones
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+            Disfruta de nuestros montaditos, frituras limpias con aceite limpio de oliva y tapas frías de temporada.
+          </p>
+</div>
+<div class="mt-6 md:mt-0">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors shadow-sm" href="tel:622442597">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Ver carta completa en barra</span>
+</a>
+</div>
+</div>
+<!-- Bento-inspired grid of Tapas Specialties -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Tapas Feature 1: Carne al Toro -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-bold text-label-sm font-label-sm uppercase tracking-wide">Guiso tradicional</span>
+<span class="bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-bold">Sin prisa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Carne al Toro Guisada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Receta de abuela cocinada a fuego lentísimo durante cuatro horas con cebolla pochada y laurel del huerto.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-container-high">
+<span class="text-outline text-label-sm font-label-sm">Tapa · Media · Ración</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">3,50 € / 9,00 €</span>
+</div>
+</div>
+<!-- Tapas Feature 2: Pimientos de Bacalao -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-bold text-label-sm font-label-sm uppercase tracking-wide">Pescados &amp; Huerto</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-bold">Casero</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Pimientos Rellenos Bacalao</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Farsa suave de bacalao desalado artesanalmente, velouté de leche fresca y gratinado crujiente.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-container-high">
+<span class="text-outline text-label-sm font-label-sm">Tapa · Ración</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">3,80 € / 8,50 €</span>
+</div>
+</div>
+<!-- Tapas Feature 3: Fajitas Rellenas Caseras -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-bold text-label-sm font-label-sm uppercase tracking-wide">Plato Vecinal</span>
+<span class="bg-surface-container-highest text-on-surface-variant px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-bold">Popular</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Fajitas Rellenas Caseras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Nuestra versión con pollo de corral adobado con pimentón de la Vera, queso fundido y verduritas salteadas.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-container-high">
+<span class="text-outline text-label-sm font-label-sm">2 Unidades</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">4,50 €</span>
+</div>
+</div>
+<!-- Tapas Feature 4: Aliños Sevillanos -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-secondary font-bold text-label-sm font-label-sm uppercase tracking-wide">Frescura diaria</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Papas Aliñás &amp; Ensaladilla</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Patata de Sanlúcar templada con cebolleta tierna, perejil fresco y vinagre de Jerez de reserva.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-surface-container-high">
+<span class="text-outline text-label-sm font-label-sm">Tapa · Media</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,50 € / 5,50 €</span>
+</div>
+</div>
+<!-- Tapas Feature 5: Fuera de Carta Banner -->
+<div class="bg-surface-container p-6 rounded-2xl border border-outline-variant/80 shadow-sm md:col-span-2 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<span class="inline-flex items-center gap-1.5 text-primary font-bold text-label-sm font-label-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+              Sugerencias del Mercado
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-2">Pescados del día y Vinos de la Tierra</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-lg">
+              Pregunta al camarero por los chocos fritos, las espinacas con garbanzos o la manzanilla bien fría servida en catavinos tradicional.
+            </p>
+</div>
+<a class="shrink-0 inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-lg text-label-lg shadow-sm" href="tel:622442597">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span>Preguntar hoy</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. POR QUÉ ELEGIRNOS -->
+<section class="py-16 md:py-20 bg-surface-container-low border-y border-outline-variant/60">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-xl mx-auto mb-14">
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider font-bold">Nuestros Valores</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+          Por qué venir a La Tapería
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">soup_kitchen</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Cocina fresca cada día</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Nada de platos precocinados ni bolsas congeladas. Cada mañana preparamos nuestras salsas, fondos y tortillas a mano.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Trato familiar de barrio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Aquí conocemos a los vecinos por su nombre y cómo toman el café. Cercanía, hospitalidad y simpatía en cada comanda.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/50 text-center flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-5 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">euro_symbol</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-bold">Calidad-precio imbatible</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Comer bien y contundente no debe ser un lujo. Desayunos y menús completos a precios honestos para toda la familia.
+          </p>
+</div>
+</div>
+<!-- Take Away Callout -->
+<div class="mt-12 bg-primary-container text-on-primary p-6 md:p-8 rounded-2xl shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[30px]">takeout_dining</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold">Servicio de comida casera para llevar (Take Away)</h4>
+<p class="font-body-md text-body-md text-inverse-on-surface mt-1">¿No tienes tiempo de cocinar? Llámanos con 20 minutos de antelación y te lo preparamos todo recién hecho.</p>
+</div>
+</div>
+<a class="shrink-0 bg-surface-container-lowest text-primary hover:bg-surface-container-low px-6 py-3 rounded-full font-title-md text-title-md font-bold shadow-sm transition-transform active:scale-95" href="tel:622442597">
+          Encargar al 622 44 25 97
+        </a>
+</div>
+</div>
+</section>
+<!-- 8. OPINIONES DE CLIENTES ("LO QUE DICEN NUESTROS VECINOS") -->
+<section class="py-16 md:py-24 bg-surface" id="opiniones">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Section Header with Rating badge -->
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12">
+<div>
+<div class="azulejo-divider mb-3 md:justify-start">
+<span class="azulejo-divider-mark !mx-0 !mr-4"></span>
+</div>
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">Opiniones Reales</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+            Lo que dicen nuestros vecinos
+          </h2>
+</div>
+<!-- Rating Box -->
+<div class="mt-4 md:mt-0 flex items-center gap-3 bg-surface-container px-4 py-2.5 rounded-2xl border border-outline-variant">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold">4.8 / 5</span>
+<span class="text-body-sm text-body-sm text-on-surface-variant">(+280 opiniones locales)</span>
+</div>
+</div>
+</div>
+<!-- Testimonials 3 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "El mollete de carne mechada con tomate para desayunar es obligatorio en Dos Hermanas. Rapidez, amabilidad y precios que ya no se ven por ahí. Un bar auténtico de los de siempre."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center">
+              MA
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight">Manuel Alarcón</h4>
+<span class="text-body-sm text-body-sm text-outline">Vecino de Dos Hermanas</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "La carne al toro está insuperable, tiernísima. Venimos a menudo entre semana con los compañeros de trabajo para el menú del día. Calidad casera 100%."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary font-bold flex items-center justify-center">
+              RM
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight">Rocío Moreno</h4>
+<span class="text-body-sm text-body-sm text-outline">Cliente habitual</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-6">
+              "Atención impecable de los camareros a pesar de estar siempre lleno. La terraza exterior es un lujo para tomarse la cerveza bien tirada con una tapa de tortilla."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-surface-container">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 text-tertiary font-bold flex items-center justify-center">
+              JG
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface leading-tight">Juan Gómez</h4>
+<span class="text-body-sm text-body-sm text-outline">Comida familiar</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a class="inline-flex items-center gap-2 text-primary hover:text-primary-container font-label-lg text-label-lg font-bold underline underline-offset-4" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">rate_review</span>
+<span>Dejar una reseña en Google Maps</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 9. GALERÍA DEL LOCAL -->
+<section class="py-16 md:py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-wider font-bold">Rincones con Alma</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+          El ambiente de La Tapería
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          De la bulliciosa barra a nuestra fresca terraza exterior en la Calle Santa María Magdalena.
+        </p>
+</div>
+<!-- Mosaico Fotográfico -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="h-60 rounded-2xl overflow-hidden shadow-sm border border-outline-variant/60 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A candid documentary-style photograph of the bustling tapas counter inside a traditional bar in Dos Hermanas, showing cured Spanish hams hanging from wooden beams, glowing warm interior lighting, and patrons enjoying conversation at the bar counter with cold beer and wine glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByUmFIeVCTL1ZhuGr2iGhQZzTBhdrlQnp2qdVKeIDxF8fSG3dqarvarctliRxbGGgJoFNck46apJW6X2Joc8f01Qr-xzvWOWsdHwOlomyet7w3ZCDe7rlp6bIkUNI3yDwNjS1obcesCX87AQMFWEqYEZ0TrQWCW6U33a_4UqSFJwoS0kH061v1PjBNCi5dhFsUTFDj56lPp5DdvRqdpVGHt34tScEytYJjYjGkSD---PwFwk3V1j3h7w"/>
+</div>
+<div class="h-60 rounded-2xl overflow-hidden shadow-sm border border-outline-variant/60 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A charming outdoor street terrace in Seville province during afternoon sunlight, featuring wrought-iron chairs, wooden bistro tables shaded by large sun umbrellas, and cheerful local diners savoring tapas in a relaxed and inviting neighborhood setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHN2bbFZFbUg0NWd9uMFKWYa0fa5a132MWFyMHqL3_0K7oeleDtM-5TxlCi9WzQYeIbwWhvWZVuDRR0c_AKGZ67cb1WOfIld4HpyQu_L2TxQo1VMxr2GqfF-u1t1pAkShR3lsxBd6msma6mLSnzY8BjBRkL3mIFiPjds5gSibaZE5Kxzmnj_I1-RFgmMaJJva3uhhkmBkBiY3zqnfTIb1OLCZd9CJOPcixrVebW-jiw839u7MdFqaM4g"/>
+</div>
+<div class="h-60 rounded-2xl overflow-hidden shadow-sm border border-outline-variant/60 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A detailed close-up shot of hand-painted Andalusian ceramic tiles in cobalt blue, terracotta, and olive green decorative geometric patterns on the interior wall of a warm historic tavern in Dos Hermanas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbesu_gQBUQBnwrrsGvGAaxMFPyEdmpLxI4HqaDaOkJlkzWvqY07It5MYQJ6a_HUvTiBtTvFkfVBrt9nPOdOZALuryAl23OtSdOR88CngC7Az3Gg_I13p8SkC7gP6vHmJz3GS6rb9iWigOOIyTo87JKatunUbwUvmFjjy-djU4yQdOQs-INjx3fx8_QyfMM4cTlhomwZTv3OovYHJU5e7LzQJfQ0hUp8E8VJq2hj2-QF3uBAOxyZTtJw"/>
+</div>
+<div class="h-60 rounded-2xl overflow-hidden shadow-sm border border-outline-variant/60 group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="An appetizing overhead view of freshly plated Spanish tapas on traditional earthenware terracotta dishes, garnished with fragrant fresh herbs and surrounded by golden bread sticks on a rustic pine table in warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYvdb6NSCT3Pn7Wx5g5LduN8MhxivhCyvqHaFLUNgLXc0uZaWrrmwa5ByGeSXIsNk_ixEe_LPGUQzU1iDWzXuApkKuLjPrqJdah8JuuCFIPF4vBBckcpp1GOwa9zDqMiuQ88ZR11sFO1Dn39JP-q3cvFI7y6igBqRmjKJRPkdKNFjIBJP_vZ42FxNyQt3JIug8xY3Zt1e-dlT7qZyJWLLghhbIpi87ahxHMsK7lR2dALmHUlcz-3hFmg"/>
+</div>
+</div>
+<div class="text-center mt-6">
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary font-label-md text-label-md" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Síguenos en Instagram <strong>@barlataperia.dh</strong></span>
+</a>
+</div>
+</div>
+</section>
+<!-- 10. CÓMO LLEGAR Y HORARIOS (BLOQUE ESTRELLA DE CONVERSIÓN) -->
+<section class="py-16 md:py-24 bg-surface" id="donde-estamos">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-xl mx-auto mb-12">
+<div class="azulejo-divider mb-3">
+<span class="azulejo-divider-mark"></span>
+</div>
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold">Ubicación y Contacto</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-1">
+          Ven a visitarnos en Dos Hermanas
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Situado en pleno centro, a pocos pasos de la emblemática Plaza de Valme.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Column: Interactive Map Simulation -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-3xl p-4 md:p-6 border border-outline-variant/80 shadow-md flex flex-col justify-between">
+<div class="relative w-full h-[360px] md:h-[400px] rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/60">
+<!-- Simulated Map Visual -->
+<img class="w-full h-full object-cover" data-alt="A clean, modern satellite style street map illustration centered on Calle Santa María Magdalena in Dos Hermanas, Seville, highlighted with a prominent red location pin and clear neighborhood streets under warm bright daylight." data-location="Dos Hermanas, Sevilla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARkNf2D0obokcn3c7nwv9ux0LrYcYYrTefFtdLSixB3_S8iSRUfVGZqq-VyHlKv9UqGban9dgmW9M1vy8HSHlmqK6ZBygIYsic2Iyj2fStSonW36-L-0ex2r9eiqsRts5oPrqaVj-Ubi82Hz0KCHqwXWS7mKOiEcQNXbWsPFfbaF3I1cC-mok58TjBgz417nGRGisIII0Dz0f-W_6E3tMY2z2Gsgiflv3xMGlH1xgbyv_oe6HtsqLlLw"/>
+<!-- Map Overlay Card -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-outline-variant flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">pin_drop</span>
+</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Bar La Tapería</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">C. Santa María Magdalena, 53, 41701 Dos Hermanas</p>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center justify-center gap-1.5 bg-secondary hover:bg-secondary/90 text-on-secondary px-4 py-2 rounded-full font-label-md text-label-md shadow-sm" href="https://maps.google.com/?q=Calle+Santa+Maria+Magdalena+53+Dos+Hermanas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">directions</span>
+<span>Cómo llegar (Google Maps)</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Opening Hours & Contact Actions -->
+<div class="lg:col-span-5 bg-surface-container-low p-6 md:p-8 rounded-3xl border border-outline-variant/80 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Horario de apertura</h3>
+</div>
+<!-- Schedule List -->
+<ul class="space-y-3 mb-8">
+<li class="flex items-center justify-between pb-2 border-b border-outline-variant/40">
+<span class="font-title-md text-title-md text-on-surface">Lunes a Viernes</span>
+<span class="font-title-md text-title-md text-secondary font-bold">07:00 – 21:00</span>
+</li>
+<li class="flex items-center justify-between pb-2 border-b border-outline-variant/40">
+<span class="font-title-md text-title-md text-on-surface">Sábados</span>
+<span class="font-title-md text-title-md text-secondary font-bold">07:00 – 17:00</span>
+</li>
+<li class="flex items-center justify-between pb-2">
+<span class="font-title-md text-title-md text-on-surface">Domingos</span>
+<span class="font-label-md text-label-md text-outline font-semibold uppercase">Cerrado por descanso</span>
+</li>
+</ul>
+<!-- Prominent Direct Contact Buttons -->
+<div class="space-y-3 mb-8">
+<a class="w-full flex items-center justify-center gap-2.5 bg-primary-container hover:bg-primary text-on-primary py-3.5 px-6 rounded-full font-title-md text-title-md shadow-md active:scale-98 transition-all" href="tel:622442597">
+<span class="material-symbols-outlined text-[20px]" data-icon="call">call</span>
+<span>Llamar al bar (622 44 25 97)</span>
+</a>
+<a class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white py-3.5 px-6 rounded-full font-title-md text-title-md shadow-md active:scale-98 transition-all" href="https://wa.me/34622442597" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Services Badges -->
+<div class="pt-6 border-t border-outline-variant/60">
+<span class="font-label-sm text-label-sm text-outline font-bold uppercase tracking-wider block mb-3">Servicios e Instalaciones</span>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">deck</span> Terraza exterior
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">accessible</span> Acceso movilidad reducida
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">takeout_dining</span> Comida para llevar
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">credit_card</span> Pago móvil / tarjeta
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. FOOTER COMPLETO (Shared Components Footer) -->
+<footer class="w-full bg-surface-container dark:bg-inverse-surface border-t border-outline-variant/80 dark:border-outline/40">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Left brand & neighborhood gratitude -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">
+          Bar La Tapería
+        </span>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-inverse-on-surface mt-1">
+          Gracias por ser parte del barrio de Dos Hermanas.
+        </p>
+<span class="text-label-sm font-label-sm text-outline mt-2">
+          © 2024 Bar La Tapería · Dos Hermanas (Sevilla). Tradición, tapeo y cocina con alma andaluza.
+        </span>
+</div>
+<!-- Links from Shared Components Footer -->
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-md font-label-md">
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#carta">Carta &amp; Raciones</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#menu-del-dia">Menú Diario</a>
+<a class="text-primary dark:text-inverse-primary font-semibold" href="#desayunos">Desayunos Sevillanos</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#donde-estamos">Dónde Estamos</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Aviso Legal &amp; Privacidad</a>
+</nav>
+</div>
+</footer>
+<!-- 12. BOTTOM NAVIGATION BAR (Mobile Only - Shared Components BottomNavBar) -->
+<aside class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(43,33,24,0.08)] dark:shadow-none border-t border-outline-variant dark:border-outline/40">
+<!-- Item 1: Llamar (Active State as Primary Quick Action) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1.5 font-bold shadow-sm active:scale-[0.97] transition-transform duration-150" href="tel:622442597">
+<span class="material-symbols-outlined text-[20px]" data-icon="call">call</span>
+<span class="text-label-md font-label-md">Llamar</span>
+</a>
+<!-- Item 2: WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-inverse-on-surface px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container-highest active:scale-[0.97] transition-transform duration-150" href="https://wa.me/34622442597" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span class="text-label-md font-label-md">WhatsApp</span>
+</a>
+<!-- Item 3: Cómo llegar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-inverse-on-surface px-3 py-1 hover:bg-surface-container-high dark:hover:bg-surface-container-highest active:scale-[0.97] transition-transform duration-150" href="#donde-estamos">
+<span class="material-symbols-outlined text-[20px]" data-icon="location_on">location_on</span>
+<span class="text-label-md font-label-md">Cómo llegar</span>
+</a>
+</aside>
+</body></html>
